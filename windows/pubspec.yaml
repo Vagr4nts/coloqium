@@ -1,0 +1,41 @@
+name: newbie
+
+version: 1.0.0
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_svg: ^0.23.0+1
+
+  google_fonts: ^2.1.0
+
+  intl: ^0.17.0
+
+dev_dependencies:
+  dart_code_metrics: ^4.5.0
+
+  flutter_lints: ^2.0.0
+
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  generate: true
+
+  assets:
+    - assets/flags/
+    - assets/svg/
+    - assets/fonts/
+
+arb-dir: lib/l10n
+template-arb-file: app_en.arb
+output-localization-file: app_localizations.dart
